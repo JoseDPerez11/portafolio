@@ -10,6 +10,16 @@ module.exports = {
         primaryColor: "#64FFDA",
         textColor: "#8892B0" }
       },
+      animation: {
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
+      },
+      keyframes: {
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
+      },
       screens: {
         'xsm': '350px',
         'xs': '476px',
@@ -27,21 +37,6 @@ module.exports = {
         'sm-mx': { 'max': '639px' },
         'xs-mx': { 'max': '475px' },
         'xsm-mx': { 'max': '349px' }
-      },
-      colors: {
-        bgColor: "#112240",
-        primaryColor: "#64FFDA",
-        textColor: "#8892B0"
-      },
-      animation: {
-        backgroundPositionSpin:
-          "background-position-spin 3000ms infinite alternate",
-      },
-      keyframes: {
-        "background-position-spin": {
-          "0%": { backgroundPosition: "top center" },
-          "100%": { backgroundPosition: "bottom center" },
-        },
       },
       
     },

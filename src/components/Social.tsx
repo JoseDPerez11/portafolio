@@ -17,7 +17,6 @@ const Social=() => {
         {socialIcons}
         <hr className="border-[2px] w-40 rounded-full bg-textColor border-textColor" />
     </div>
-    
-    //43:35
+
 }
 export default Social;
