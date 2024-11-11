@@ -1,5 +1,5 @@
 
-import { MantineProvider } from '@mantine/core';
+import { createTheme, MantineProvider } from '@mantine/core';
 import { pdfjs } from 'react-pdf';
 
 import '@mantine/core/styles.css';
@@ -12,10 +12,22 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 function App() {
+  const theme = createTheme({
+    breakpoints: {
+      'xs': '320px',
+      'sm': '476px',
+      'md': '640px',
+      'bs': '768px',
+      'lg': '900px',
+      'xl': '1024',
+      '2xl': '1280',
+    },
+  });
+
   return (
-    <MantineProvider >
+    <MantineProvider theme={theme} >
     <HomePage />
-    </MantineProvider>
+    </MantineProvider >
   );
 }
 

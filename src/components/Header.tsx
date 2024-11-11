@@ -1,5 +1,7 @@
 import { IconHexagonLetterD } from "@tabler/icons-react";
 import SideBar from "./SideBar";
+import { useMediaQuery } from "@mantine/hooks";
+import { em } from "@mantine/core";
 
 const links=["About","Work","Experience","Skills","Contact"];
 const navLinks=(col:Boolean)=>{
@@ -9,11 +11,12 @@ const navLinks=(col:Boolean)=>{
 }
 
 const Header=()=>{
-return (
-    <nav className="flex bg-bgColor h-[18vh] px-10  justify-between items-center">
+    const isMobile = useMediaQuery(`(max-width: ${em(476)})`);
+    return(
+        <nav className="flex bg-bgColor h-28 px-10 justify-between items-center xs-mx:px-4 xs-mx:h-20">
         
-        <IconHexagonLetterD className="z-10" size={60} color="#64FFDA" stroke={1.25}/>
-        <div className="md:flex gap-8 hidden">
+        <IconHexagonLetterD className="z-10" size={isMobile?45:60} color="#64FFDA" stroke={1.25} />
+            <div className="bs:flex gap-8 hidden" >
             {navLinks(false)}
         </div>
         <SideBar/>

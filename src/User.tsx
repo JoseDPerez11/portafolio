@@ -1,3 +1,4 @@
+import { IconBrandGithub, IconBrandInstagram, IconBrandLeetcode, IconBrandLinkedin, IconBrandYoutube } from "@tabler/icons-react";
 
 const Info={
     name: "Jose D. Pérez",
@@ -81,6 +82,15 @@ const SkillInfo = [
         skills: ["Git", "Github", "VS Code", "Postman", "MongoDB Compass", "Spring Tool Suite"]
     }
 ]
+
+const socialLinks = [
+    { link: "https://github.com/Code-Mars", icon: IconBrandGithub },
+    { link: "https://www.linkedin.com/in/chandrabhan-maurya", icon: IconBrandLinkedin },
+    { link: "https://www.instagram.com/code.marshal_", icon: IconBrandInstagram }, 
+    { link: "https://www.youtube.com/channel/UC1ki6jaFvFiH_E79b9FYptw", icon: IconBrandYoutube },
+    { link: "https://www.leetcode.com/u/CodeMars", icon: IconBrandLeetcode }
+];
+
 const ExperienceInfo = [
     {
         role: "Specialist Programmer",
@@ -137,4 +147,4 @@ const Slugs = [
     "figma",
 ]
 
-export {Info, ProjectInfo, SkillInfo, ExperienceInfo, Slugs};
+export {Info, ProjectInfo, SkillInfo, ExperienceInfo, socialLinks, Slugs};
