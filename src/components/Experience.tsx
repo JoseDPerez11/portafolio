@@ -12,7 +12,7 @@ const TimelineItem = (items: any) => {
     return items.map((item: any, index: number) => <Timeline.Item data-aos="fade-up" data-aos-duration="800" key={index} className="!pt-12 !mb-2 sm-mx:!p-1" bullet={<IconBriefcaseFilled className="!text-bgColor" size={size} />} >
         <div className="border shadow-[0_0_10px_0_#64FFDA50] flex flex-col gap-2 border-primaryColor p-4 rounded-2xl sm-mx:p-2" >
             <div className="flex gap-2 items-center" >
-                <img className="rounded-lg w-16 md-mx:w-14" src={`/${item.company}.png`} alt="Company" />
+                <img className="rounded-lg w-16 md-mx:w-14" src={`${item.company}.png`} alt="Company" />
                 <div className="flex flex-col" >
                     <div className="text-white text-2xl font-semibold sm-mx:text-xl xs-mx:text-lg xsm-mx:text-base" >{item.role}</div>
                     <div className="text-lg font-semibold text-textColor md-mx:text-base sm-mx:text-sm xs-mx:text-xs" >{item.company} &#x2022; {item.date}</div>
