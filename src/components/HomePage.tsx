@@ -9,6 +9,7 @@ import Skills from "./Skills";
 import Social from "./Social";
 import Footer from "./Footer";
 import { Loader } from "./Loader";
+import { Toaster } from "react-hot-toast";
 
 
 const HomePage=()=>{
@@ -22,6 +23,7 @@ const HomePage=()=>{
 
     return <div className={` focus-visible:[&_button]:!outline-none min-h-[100vh] ${loading?"flex":""} items-center overflow-hidden justify-center`}>
         {   loading!==true?<>
+        <Toaster />
         <Header />
         <About />
         <Projects />
